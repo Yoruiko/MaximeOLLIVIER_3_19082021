@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./public/css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <title>Oh My Food !</title>
+    </head>
+
+
+    <body>
+        
+        <header class="header">
+            <div class="header__title">
+                <h1>ohmyfood</h1>
+            </div>
+        </header>
+<!--MAIN CONTAINER-->
+        <main class="container">
+            
+            <section class="heading"> <!--Main heading with, LOCALISATION, SLOGAN WITH ITS DESC, BUTTON-->
+                <div class="heading__local">
+                    <div class="local__pin">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="local__place">
+                        <p>Paris, Belleville</p>
+                    </div>
+                </div>
+                <div class="heading__slogan">
+                    <h2>Réservez le menu qui vous convient</h2> 
+                    <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                </div>
+                <div class="heading__btn btn--modifier">
+                    <span class="btn__title">Explorer nos restaurants</span>
+                </div>       
+            </section>
+
+            <section class="fonction">
+                <div class="fonction__heading">
+                    <h2>Fonctionnement</h2>
+                </div>
+                
+                <div class="fonction__chose fonction--modifier">
+                    <p>1</p>
+                    <i class="fas fa-mobile-alt"></i>
+                    <span class="fonction_desc">Choisissez un restaurant</span>
+                </div>
+                <div class="fonction__compose fonction--modifier">
+                    <p>2</p>
+                    <i class="fas fa-list-ul"></i>
+                    <span class="fonction_desc">Composez votre menu</span>
+                </div>
+                <div class="fonction__taste fonction--modifier">
+                    <p>3</p>
+                    <i class="fas fa-store"></i>
+                    <span class="fonction_desc">Dégustez au restaurant</span>
+                </div>
+            </section>
+
+            <section class="restaurants">
+                <div class="restaurants__heading">
+                    <h2>Restaurants</h2>
+                </div>
+                <!--LA PALETTE DU GOUT-->
+                <article class="restaurants__store__first store--modifier">
+                    <a href="la_palette_du_gout.html">
+                    <figure class="store__card">
+                        <img src="public/img/Lapalettedugout.jpg" alt="La palette du gout" class="card__img" />
+                        <figcaption class="img__new">Nouveau</figcaption>
+                    </figure>
+                    <header class="store__info">
+                        <div class="info__desc">
+                            <h3>La palette du goût</h3>
+                            <h4>Menilmontant</h4>
+                        </div>
+                        <div class="info__like">
+                            <i class="far fa-heart liked--false"></i>
+                            <i class="fas fa-heart liked--true"></i>
+                        </div>
+                    </header>
+                    </a>               
+                </article>
+                <!--LA NOTE ENCHANTEE-->
+                <article class="restaurants__store__second store--modifier">
+                    <a href="la_note_enchantee.html">
+                    <figure class="store__card">
+                        <img src="public/img/lanoteenchantée.jpg" alt="La note enchantée" class="card__img" />
+                        <figcaption class="img__new">Nouveau</figcaption>
+                    </figure>
+                    <header class="store__info">
+                        <div class="info__desc">
+                            <h3>La note enchantée</h3>
+                            <h4>Charonne</h4>
+                        </div>
+                        <div class="info__like">
+                            <i class="far fa-heart liked--false"></i>
+                            <i class="fas fa-heart liked--true"></i>
+                        </div>
+                    </header>
+                    </a>               
+                </article>
+                <!--A LA FRANCAISE-->
+                <article class="restaurants__store__third store--modifier">
+                    <a href="a_la_francaise.html">
+                    <figure class="store__card">
+                        <img src="public/img/alafrancaise.jpg" alt="A la francaise" class="card__img" />
+                    </figure>
+                    <header class="store__info">
+                        <div class="info__desc">
+                            <h3>A la française</h3>
+                            <h4>Cité Rouge</h4>
+                        </div>
+                        <div class="info__like">
+                            <i class="far fa-heart liked--false"></i>
+                            <i class="fas fa-heart liked--true"></i>
+                        </div>
+                    </header>
+                    </a>               
+                </article>
+                <!--LE DELICE DES SENS-->
+                <article class="restaurants__store__fourth store--modifier">
+                    <a href="le_delice_des_sens.html">
+                    <figure class="store__card">
+                        <img src="public/img/ledélicedessens.jpg" alt="Le délice des sens" class="card__img" />
+                    </figure>
+                    <header class="store__info">
+                        <div class="info__desc">
+                            <h3>Le délice des sens</h3>
+                            <h4>Folie-Mérincourt</h4>
+                        </div>
+                        <div class="info__like">
+                            <i class="far fa-heart liked--false"></i>
+                            <i class="fas fa-heart liked--true"></i>
+                        </div>
+                    </header>
+                    </a>               
+                </article>
+            </section>
+        </main>
+<!--FOOTER-->
+        <footer class="footer">
+            <div class="footer__heading">
+                <a href="index.html">
+                    <img src="public/img/ohmyfood@2x.svg" alt="ohmyfood logo" class="footer__heading__img">
+                </a>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                        <p><i class="fas fa-utensils"></i>
+                        Proposer un restaurant</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                        <p><i class="fas fa-hands-helping"></i>
+                        Devenir partenaire</p>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                        <p>Mentions légales</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:ohmyfood@contact.com">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
+
+
