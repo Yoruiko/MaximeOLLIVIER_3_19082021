@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+$title-font: 'Shrikhand', serif; /*Logo and title*/
+$main-font: 'Roboto', sans-serif; /*other texts*/
+
+@mixin flexbox-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$tertiary-color: #99E2D0;
+$gray: #f2f2f2;
+$shadow-gray: #dddddd;
+$light-gray: #fafafa;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: $main-font;
+    a{
+        text-decoration: none;
+        font-family: $main-font;
+    }
+}
+.header{
+    width: 100%;
+    box-shadow: 0px 3px 10px $shadow-gray;
+    position: sticky;
+    &__title{
+        text-align: center;
+        font-family: $title-font;
+        font-size: 1.3rem;
+        padding: 10px 0px 10px 0px;
+    }
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    &__heading{
+        @include flexbox-center;
+        flex-direction: column;
+        padding-bottom: 50px;
+        background-color: $light-gray;
+    }
+}
+.map{
+    @include flexbox-center;
+    width: 100%;
+    background-color: $gray;
+    font-size: 1.1rem;
+    padding: 20px 0px 20px 0px;
+    box-shadow: 1px 0px 2px $shadow-gray;
+    &__pin{
+        padding: 0px 15px 0px 0px;
+    }
+    &__name{
+        font-family: $main-font;
+    }
+}
+.slogan{
+    @include flexbox-center;
+    flex-direction: column;
+    width: 100%;
+    padding: 40px 0px 40px 0px;
+    &__title{
+        width: 50%;
+        font-size: 1.8rem;
+        text-align: center;
+        font-weight: bolder;
+    }
+    &__subtitle{
+        width: 50%;
+        font-size: 1rem;
+        text-align: center;
+        font-weight: lighter;
+        margin-top: 15px;
+    }
+}
+.btn{
+    &__title{
+        color: white;
+        font-size: 1.2rem;
+    }
+    &--style{
+        padding: 15px 15px 15px 15px;
+        background-color: $secondary-color;
+        border-radius: 50px;
+    }
+}
