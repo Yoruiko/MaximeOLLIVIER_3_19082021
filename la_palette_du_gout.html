@@ -10,16 +10,18 @@
     </head>
 
     <body>
-        <header class="header">
+        <header class="header__menu">
+            <div class="headder__arrow">
             <i class="fas fa-arrow-left"></i>
+            </div>
             <div class="header__title">
                 <h1>ohmyfood</h1>
             </div>
         </header>
 
-        <main class="menudisplay">
+        <main class="store-menu">
             
-            <div class="menudisplay__store">
+            <div class="store__info">
                 <h2 class="store__name">La palette du goût</h2>
                 <div class="store__like">
                     <i class="far fa-heart liked-false"></i>
@@ -27,37 +29,127 @@
                 </div>
             </div>
 
-            <section class="menudisplay__meal">
+            <section class="menu">
                 <!--ENTREES-->
-                <div class="meal__list__first">
-                    <h3>Entrées</h3>
-                    <a href="#">  <!--est ce que je vais pas avoir un soucis au moment du hover ? quand je vais passer la souris dessus ca va me mettre le hover sur tous ?-->
-                        <div class="meal__desc meal--checkbox">
-                            <h3 class="meal__desc__title">Fricassée d'escargot</h3>
-                            <h4 class="meal__desc__sub">Au piment d'Espelette</h4> 
+                <div class="menu__list1">
+                    <h3 class="list__title">Entrées</h3>
+                    <a href="#">
+                        <div class="entree1 meal--style">
+                            <h3 class="meal__title">Fricassée d'escargot</h3>
+                            <h4 class="meal__subtitle">Au piment d'Espelette</h4> 
                             <span class="meal__price">25€</span>
                             <i class="fas fa-check-circle"></i>                         
                         </div>                           
                     </a>
                     <a href="#">
-                        <div class="meal__desc meal--checkbox">
-                            <h3 class="meal__desc__title">Foie gras de canard mi-cuit</h3>
-                            <h4 class="meal__desc__sub">Et ses copeaux de truffe noire</h4> 
+                        <div class="entree2 meal--style">
+                            <h3 class="meal__title">Foie gras de canard mi-cuit</h3>
+                            <h4 class="meal__subtitle">Et ses copeaux de truffe noire</h4> 
                             <span class="meal__price">35€</span>
                             <i class="fas fa-check-circle"></i>                         
                         </div>                           
                     </a>
                     <a href="#">
-                        <div class="meal__desc meal--checkbox">
-                            <h3 class="meal__desc__title">Oeuf au plat</h3>
-                            <h4 class="meal__desc__sub">Assaisonné à la truffe sur lit de caviar</h4> 
+                        <div class="entree3 meal--style">
+                            <h3 class="meal__title">Oeuf au plat</h3>
+                            <h4 class="meal__sub">Assaisonné à la truffe sur lit de caviar</h4> 
                             <span class="meal__price">20€</span>
                             <i class="fas fa-check-circle"></i>                         
                         </div>                           
                     </a>
                 </div>  
                 <!--PLATS-->
-                                  
+                <div class="menu__list2">
+                    <h3 class="list__title">Plats</h3>
+                    <a href="#">
+                        <div class="plat1 meal--style">
+                            <h3 class="meal__title">Filet de boeuf aux herbes</h3>
+                            <h4 class="meal__subtitle">Accompagné de sa ribambelle de légumes</h4> 
+                            <span class="meal__price">40€</span>
+                            <i class="fas fa-check-circle"></i>                         
+                        </div>                           
+                    </a>
+                    <a href="#">
+                        <div class="plat2 meal--style">
+                            <h3 class="meal__title">Parmentier de queue de boeuf</h3>
+                            <h4 class="meal__subtitle">À la truffe noire sur sa purée de panais</h4> 
+                            <span class="meal__price">35€</span>
+                            <i class="fas fa-check-circle"></i>                         
+                        </div>                           
+                    </a>
+                    <a href="#">
+                        <div class="plat3 meal--style">
+                            <h3 class="meal__title">Filet de turbot</h3>
+                            <h4 class="meal__sub">Aux agrumes</h4> 
+                            <span class="meal__price">44€</span>
+                            <i class="fas fa-check-circle"></i>                         
+                        </div>                           
+                    </a>
+                </div>
+                <!--DESSERTS-->
+                <div class="menu__list3">
+                    <h3 class="list__title">Desserts</h3>
+                    <a href="#">
+                        <div class="dessert1 meal--style">
+                            <h3 class="meal__title">Paris-Brest</h3>
+                            <h4 class="meal__subtitle">Revisité</h4> 
+                            <span class="meal__price">18€</span>
+                            <i class="fas fa-check-circle"></i>                         
+                        </div>                           
+                    </a>
+                    <a href="#">
+                        <div class="dessert2 meal--style">
+                            <h3 class="meal__title">Macaron au chocolat d'exception </h3>
+                            <h4 class="meal__subtitle">Et glace à la vanille de Madagascar</h4> 
+                            <span class="meal__price">22€</span>
+                            <i class="fas fa-check-circle"></i>                         
+                        </div>                           
+                    </a>
+                    <a href="#">
+                        <div class="dessert3 meal--style">
+                            <h3 class="meal__title">Mousse au chocolat </h3>
+                            <h4 class="meal__sub">Au piment d'Espelette et à la truffe noire</h4> 
+                            <span class="meal__price">23€</span>
+                            <i class="fas fa-check-circle"></i>                         
+                        </div>                           
+                    </a>
+                </div>                                  
             </section>
         </main>
+        <footer class="footer">
+            <div class="footer__heading">
+                <a href="index.html">
+                    <img src="public/img/ohmyfood@2x.svg" alt="ohmyfood logo" class="footer__heading__img">
+                </a>
+            </div>
+            <nav class="footer__nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                        <p><i class="fas fa-utensils"></i>
+                        Proposer un restaurant</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                        <p><i class="fas fa-hands-helping"></i>
+                        Devenir partenaire</p>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="#">
+                        <p>Mentions légales</p>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:ohmyfood@contact.com">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
     </body>
