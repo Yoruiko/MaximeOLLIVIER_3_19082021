@@ -90,4 +90,80 @@ body a {
   border-radius: 50px;
 }
 
+.heading--style {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 15px;
+}
+.heading--style h2 {
+  font-size: 1.6rem;
+}
+
+.fonction {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0px 30px 0px;
+}
+.fonction--style {
+  /*weird name because i couldn't find another name, its just a div to exclude the number of the background*/
+  background-color: #fafafa;
+  padding: 20px 50px 20px 0px;
+  border-radius: 15px;
+  margin-top: 20px;
+  width: 260px;
+}
+.fonction .fas {
+  /*the icon beneath the text*/
+  color: grey;
+  margin-right: 15px;
+}
+.fonction__number {
+  background-color: #9356DC;
+  color: white;
+  font-weight: normal;
+  border-radius: 50px;
+  padding: 3px 8px 3px 8px;
+  position: relative;
+  left: -35px;
+}
+.fonction__desc {
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.fonction1, .fonction2, .fonction3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fonction2 .fas {
+  position: relative;
+  left: -7px;
+}
+.fonction2 .fonction__desc {
+  position: relative;
+  left: -10px;
+}
+.fonction2 .fonction__number {
+  left: -40px;
+}
+
+.fonction3 .fas {
+  position: relative;
+  left: -5px;
+}
+.fonction3 .fonction__desc {
+  position: relative;
+  left: -8px;
+}
+
+.restaurants {
+  width: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -31,24 +31,24 @@ body{
     width: 100%;
     box-shadow: 0px 3px 10px $shadow-gray;
     position: sticky;
-    &__title{
-        text-align: center;
-        font-family: $title-font;
-        font-size: 1.3rem;
-        padding: 10px 0px 10px 0px;
-    }
+        &__title{
+            text-align: center;
+            font-family: $title-font;
+            font-size: 1.3rem;
+            padding: 10px 0px 10px 0px;
+        }
 }
 
 .main{
     width: 100%;
     display: flex;
     flex-direction: column;
-    &__heading{
-        @include flexbox-center;
-        flex-direction: column;
-        padding-bottom: 50px;
-        background-color: $light-gray;
-    }
+        &__heading{
+            @include flexbox-center;
+            flex-direction: column;
+            padding-bottom: 50px;
+            background-color: $light-gray;
+        }
 }
 .map{
     @include flexbox-center;
@@ -57,40 +57,114 @@ body{
     font-size: 1.1rem;
     padding: 20px 0px 20px 0px;
     box-shadow: 1px 0px 2px $shadow-gray;
-    &__pin{
-        padding: 0px 15px 0px 0px;
-    }
-    &__name{
-        font-family: $main-font;
-    }
+        &__pin{
+            padding: 0px 15px 0px 0px;
+        }
+        &__name{
+            font-family: $main-font;
+        }
 }
 .slogan{
     @include flexbox-center;
     flex-direction: column;
     width: 100%;
     padding: 40px 0px 40px 0px;
-    &__title{
-        width: 50%;
-        font-size: 1.8rem;
-        text-align: center;
-        font-weight: bolder;
-    }
-    &__subtitle{
-        width: 50%;
-        font-size: 1rem;
-        text-align: center;
-        font-weight: lighter;
-        margin-top: 15px;
-    }
+        &__title{
+            width: 50%;
+            font-size: 1.8rem;
+            text-align: center;
+            font-weight: bolder;
+        }
+        &__subtitle{
+            width: 50%;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: lighter;
+            margin-top: 15px;
+        }
 }
 .btn{
-    &__title{
-        color: white;
-        font-size: 1.2rem;
-    }
-    &--style{
-        padding: 15px 15px 15px 15px;
-        background-color: $secondary-color;
-        border-radius: 50px;
+        &__title{
+            color: white;
+            font-size: 1.2rem;
+        }
+        &--style{
+            padding: 15px 15px 15px 15px;
+            background-color: $secondary-color;
+            border-radius: 50px;
+        }
+}
+.heading--style{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 15px;
+    h2{
+        font-size: 1.6rem;
     }
 }
+.fonction{
+    width: 100%;
+    @include flexbox-center;
+    flex-direction: column;
+    padding: 30px 0px 30px 0px;
+        &--style{ /*weird name because i couldn't find another name, its just a div to exclude the number of the background*/
+            background-color: $light-gray;
+            padding: 20px 50px 20px 0px;
+            border-radius: 15px;
+            margin-top: 20px;
+            width: 260px;
+            }
+            .fas{  /*the icon beneath the text*/
+                color: grey;
+                margin-right: 15px;              
+            }
+        
+        &__number{
+            background-color: $primary-color;
+            color: white;
+            font-weight: normal;
+            border-radius: 50px;
+            padding: 3px 8px 3px 8px;
+            position: relative;
+            left: -35px;
+        }
+        &__desc{
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+}
+.fonction1, .fonction2, .fonction3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fonction2{
+    .fas{
+        position: relative;
+        left: -7px;
+    }
+    .fonction__desc{
+        position: relative;
+        left: -10px;
+    }
+    .fonction__number{
+        left: -40px;
+    }
+}
+.fonction3{
+    .fas{
+        position: relative;
+        left: -5px;
+    }
+    .fonction__desc{
+        position: relative;
+        left: -8px;
+    }
+}
+
+.restaurants{
+    width: 100%;
+}
+
+
