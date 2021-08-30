@@ -26,6 +26,9 @@ body a {
   font-size: 1.3rem;
   padding: 10px 0px 10px 0px;
 }
+.header > .fas {
+  display: none;
+}
 
 .main {
   width: 100%;
@@ -86,18 +89,19 @@ body a {
 }
 .btn--style {
   padding: 15px 15px 15px 15px;
-  background-color: #FF79DA;
+  background: linear-gradient(172deg, #FF79DA 0%, #9356DC 86%);
   border-radius: 50px;
+  box-shadow: 1px 4px 4px 4px #dddddd;
 }
 
 .heading--style {
-  width: 100%;
   display: flex;
   justify-content: flex-start;
-  padding-left: 15px;
+  width: 100%;
 }
 .heading--style h2 {
   font-size: 1.6rem;
+  padding-left: 15px;
 }
 
 .fonction {
@@ -117,7 +121,7 @@ body a {
   width: 260px;
 }
 .fonction .fas {
-  /*the icon beneath the text*/
+  /*the icon next to the text*/
   color: grey;
   margin-right: 15px;
 }
@@ -164,6 +168,97 @@ body a {
 
 .restaurants {
   width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.article--style {
+  box-shadow: 5px 5px 10px #dddddd;
+  border-radius: 15px;
+  margin: 20px 0px 15px 0px;
+}
+
+.store__card {
+  position: relative;
+}
+
+.card__img {
+  object-fit: cover;
+  width: 290px;
+  height: 180px;
+  border-radius: 15px 15px 0px 0px;
+}
+.card__img__new {
+  position: absolute;
+  background-color: #99E2D0;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+  color: #278870;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  padding: 5px 10px 5px 10px;
+}
+
+.store__info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.info__desc {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 0.8rem;
+  margin: 10px 0px 10px 10px;
+}
+.info__desc__subtitle {
+  margin-top: 4px;
+  font-weight: lighter;
+}
+
+.info__like {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  font-size: 1.5rem;
+  color: black;
+  padding-right: 10px;
+}
+.info__like .liked--true {
+  display: none;
+}
+
+.footer {
+  width: 100%;
+  background-color: #737373;
+  padding-bottom: 40px;
+}
+.footer__heading {
+  padding: 30px 0px 10px 20px;
+}
+.footer__heading a {
+  color: white;
+  font-family: "Shrikhand", serif;
+}
+.footer__nav ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+.footer__nav li {
+  font-size: 1rem;
+  margin-top: 3px;
+}
+.footer__nav li .fa-utensils {
+  margin-right: 7px;
+}
+.footer__nav a {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
