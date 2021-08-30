@@ -261,4 +261,86 @@ body a {
   color: white;
 }
 
+/*PAGE DES RESTAURANTS*/
+.container {
+  background-image: test;
+  object-fit: cover;
+  width: 100%;
+}
+
+.store-menu {
+  width: 100%;
+  margin-top: 100px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: #f2f2f2;
+  padding-top: 15px;
+}
+
+.store__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.store__name {
+  font-family: "Shrikhand", serif;
+  padding-left: 10px;
+}
+.store__like {
+  padding-right: 30px;
+}
+.store__like .liked-true {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 30px 10px;
+  margin-top: 20px;
+}
+.menu a {
+  color: black;
+}
+
+.list__title {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.entree1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 0px 10px 5px;
+  box-shadow: 5px 5px 5px #dddddd;
+}
+.entree1 .fa-check-circle {
+  padding: 10px;
+  background-color: #99E2D0;
+  color: white;
+}
+
+.meal__title {
+  font-size: 0.8rem;
+}
+.meal__title h4 {
+  font-weight: lighter;
+}
+.meal__price {
+  display: flex;
+  align-items: flex-end;
+  padding-right: 10px;
+}
+
+.price-like {
+  display: flex;
+  flex-direction: row;
+}
+.price-like > .fas {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -16,6 +16,20 @@ $btn-color: linear-gradient(172deg, $secondary-color 0%, $primary-color 86%);
     justify-content: center;
     align-items: center;
 }
+@mixin meal-style{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 0px 10px 5px;
+    box-shadow: 5px 5px 5px $shadow-gray;
+    .fa-check-circle{
+        padding: 10px;
+        background-color: $tertiary-color;
+        color: white;
+    }
+}
 
 
 *{
@@ -261,3 +275,75 @@ body{
         }
 }
 
+
+
+/*PAGE DES RESTAURANTS*/
+
+.container{
+    background-image: test;
+    object-fit: cover;
+    width: 100%;
+}
+.store-menu{
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 30px 30px 0px 0px;
+    background-color: $gray;
+    padding-top: 15px;
+}
+.store{
+    &__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    }
+    &__name{
+        font-family: $title-font;
+        padding-left: 10px;
+    }
+    &__like{
+        padding-right: 30px;
+        .liked-true{
+            display: none;
+        }
+    }
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px 30px 10px;
+    margin-top: 20px;
+    a{
+        color: black;
+    }
+}
+.list__title{
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.entree1{
+    @include meal-style;
+}
+.meal{
+    &__title{
+        font-size: 0.8rem;
+        h4{
+            font-weight: lighter;
+        }
+    }
+    &__price{
+        display: flex;
+        align-items: flex-end;
+        padding-right: 10px;
+    }
+}
+.price-like{
+    display: flex;
+    flex-direction: row;
+    >
+    .fas{
+        display: none;
+    }
+}
+    
