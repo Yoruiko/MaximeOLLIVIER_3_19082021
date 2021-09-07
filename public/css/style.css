@@ -89,22 +89,16 @@ body a {
 
 .btn__title {
   color: white;
-  font-size: 1.2rem;
+  display: flex;
   text-align: center;
 }
 .btn--style {
   padding: 15px 15px 15px 15px;
+  text-align: center;
   background: linear-gradient(356deg, #9b59dc 0%, #a77fd8 33%, #ff79da 100%);
   border-radius: 50px;
   box-shadow: 1px 4px 4px 4px #dddddd;
   transition: 200ms;
-}
-.btn--morph {
-  width: 200px;
-}
-.btn__container {
-  width: 100%;
-  justify-content: center;
 }
 .btn:hover {
   box-shadow: 1px 5px 5px 10px #dddddd;
@@ -130,7 +124,6 @@ body a {
   padding: 30px 0px 30px 0px;
 }
 .fonction--style {
-  /*weird name because i couldn't find another name, its just a div to exclude the number of the background*/
   background-color: #fafafa;
   padding: 20px 50px 20px 0px;
   border-radius: 15px;
@@ -210,7 +203,7 @@ body a {
 }
 .card__img__new {
   position: absolute;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   top: 10px;
   right: 10px;
   border-radius: 3px;
@@ -302,7 +295,9 @@ body a {
 
 .store-menu {
   width: 100%;
+  position: relative;
   margin-top: 150px;
+  padding-bottom: 40px;
   border-radius: 30px 30px 0px 0px;
   background-color: #f2f2f2;
   padding-top: 15px;
@@ -339,20 +334,29 @@ body a {
   font-size: 1rem;
   font-weight: normal;
   margin-bottom: 10px;
+  border-bottom: 2px solid #99e2d0;
+  display: block;
+  padding-top: 3px;
+  width: 40px;
 }
 
-.entree1, .entree2, .entree3, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
+.entree1, .entree2, .entree3, .entree4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   background-color: white;
   border-radius: 10px;
-  padding: 10px 0px 10px 5px;
+  height: 55px;
   box-shadow: 5px 5px 5px #dddddd;
   margin-bottom: 10px;
 }
 
 .meal__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   font-size: 0.8rem;
 }
 .meal__title h4 {
@@ -364,14 +368,90 @@ body a {
   padding-right: 10px;
 }
 
-.price-like {
+.price {
   display: flex;
   flex-direction: row;
 }
-.price-like > .fas {
-  display: none;
+
+.btn-command {
+  width: 200px;
+}
+.btn-command > .btn__title {
+  display: flex;
+  justify-content: center;
+}
+.btn-command > a {
+  text-align: center;
 }
 
 /*LOADER*/
+#loader-contain {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  opacity: 1;
+}
+
+.loading {
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+#loader {
+  border-top: 5px solid #9b59dc;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 47%;
+  top: 30%;
+  z-index: 999;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*ANIMATION MENU SHOWING*/
+.menu__list1 {
+  animation: grower 1s;
+}
+
+.menu__list2 {
+  animation: grower 1.5s;
+}
+
+.menu__list3 {
+  animation: grower 2s;
+}
+
+@keyframes grower {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
