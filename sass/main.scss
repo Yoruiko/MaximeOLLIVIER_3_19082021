@@ -16,13 +16,6 @@ $btn-color: linear-gradient(356deg,rgba(155, 89, 220, 1) 0%,rgba(167, 127, 216, 
     justify-content: center;
     align-items: center;
 }
-@mixin meal-style{
-    background-color: white;
-    border-radius: 10px;
-    height: 55px;
-    box-shadow: 5px 5px 5px $shadow-gray;
-    margin-bottom: 10px;
-}
 
 @mixin text-overflow{
     white-space: nowrap;
@@ -343,30 +336,37 @@ body{
         }
     }
 }
+
 .list__title{
+    display: block;
+    padding-top: 3px;
+    width: 40px;
     font-size: 1rem;
     font-weight: normal;
     margin-bottom: 10px;
     border-bottom: 2px solid $tertiary-color;
-    display: block;
-    padding-top: 3px;
-    width: 40px;
+
 }
 .menu{
-    display: flex;
+    @include flexbox-center;
     flex-direction: column;
-    justify-content: center;
-    padding: 0px 10px 30px 10px;
+    padding-bottom: 30px;
     margin-top: 20px;
+    width: 100%;
     a{
         color: black;
     }
         &__text{
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: center;
             overflow: hidden;
             width: 310px;
+            background-color: white;
+            border-radius: 10px;
+            height: 55px;
+            box-shadow: 5px 5px 5px $shadow-gray;
+            margin-bottom: 10px;
         }
         &__title{
             display: flex;
@@ -375,13 +375,13 @@ body{
             padding-right: 10px;
             width: 240px;
             h3{
-                font-size: 1rem;
+                font-size: 0.9rem;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
             }
             h4{
-                font-size: 0.8rem;
+                font-size: 0.7rem;
                 font-weight: lighter;
                 white-space: nowrap;
                 overflow: hidden;
@@ -406,11 +406,6 @@ body{
                 }
         }
 }
-
-.entree1, .entree2, .entree3, .entree4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
-    @include meal-style;
-}
-
 .btn-wrapper{
     display: flex;
     justify-content: center;
@@ -465,13 +460,13 @@ body{
 
 /*ANIMATION MENU SHOWING*/
 .menu__list1{
-    animation: fadeIn ease-in-out 500ms;
+    animation: fadeIn ease-in-out 1s;
 }
 .menu__list2{
-    animation: fadeIn ease-in-out  1s;
+    animation: fadeIn ease-in-out  2.5s;
 }
 .menu__list3{
-    animation: fadeIn ease-in-out  1.5s;
+    animation: fadeIn ease-in-out  3.5s;
 
 }
 
