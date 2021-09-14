@@ -149,6 +149,10 @@ body a {
   font-weight: bold;
 }
 
+.fonction--style:hover {
+  background-color: #f4ecfb;
+}
+
 .fonction1, .fonction2, .fonction3 {
   display: flex;
   justify-content: center;
@@ -294,6 +298,9 @@ body a {
 }
 
 .store-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
   position: relative;
   margin-top: 150px;
@@ -320,16 +327,6 @@ body a {
   display: none;
 }
 
-.menu {
-  display: flex;
-  flex-direction: column;
-  padding: 0px 10px 30px 10px;
-  margin-top: 20px;
-}
-.menu a {
-  color: black;
-}
-
 .list__title {
   font-size: 1rem;
   font-weight: normal;
@@ -340,11 +337,61 @@ body a {
   width: 40px;
 }
 
-.entree1, .entree2, .entree3, .entree4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
+.menu {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px 30px 10px;
+  margin-top: 20px;
+}
+.menu a {
+  color: black;
+}
+.menu__text {
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 310px;
+}
+.menu__title {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 240px;
+}
+.menu__title h3 {
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__title h4 {
+  font-size: 0.8rem;
+  font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__price {
+  display: flex;
+  height: 100%;
+  align-items: flex-end;
+  padding: 0px 15px 0px 25px;
+}
+.menu__checkbox {
+  display: none;
+  border-radius: 0px 10px 10px 0px;
+  height: 100%;
+  background-color: #99e2d0;
+}
+.menu__checkbox .fa-check-circle {
+  color: white;
+  transform: rotate(360deg);
+}
+
+.entree1, .entree2, .entree3, .entree4, .plat1, .plat2, .plat3, .dessert1, .dessert2, .dessert3 {
   background-color: white;
   border-radius: 10px;
   height: 55px;
@@ -352,36 +399,16 @@ body a {
   margin-bottom: 10px;
 }
 
-.meal__title {
+.btn-wrapper {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  font-size: 0.8rem;
-}
-.meal__title h4 {
-  font-weight: lighter;
-}
-.meal__price {
-  display: flex;
-  align-items: flex-end;
-  padding-right: 10px;
-}
-
-.price {
-  display: flex;
-  flex-direction: row;
+  width: 100%;
 }
 
 .btn-command {
-  width: 200px;
-}
-.btn-command > .btn__title {
-  display: flex;
-  justify-content: center;
-}
-.btn-command > a {
-  text-align: center;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 /*LOADER*/
@@ -434,23 +461,82 @@ body a {
 }
 /*ANIMATION MENU SHOWING*/
 .menu__list1 {
-  animation: grower 1s;
+  animation: fadeIn ease-in-out 500ms;
 }
 
 .menu__list2 {
-  animation: grower 1.5s;
+  animation: fadeIn ease-in-out 1s;
 }
 
 .menu__list3 {
-  animation: grower 2s;
+  animation: fadeIn ease-in-out 1.5s;
 }
 
-@keyframes grower {
-  from {
-    transform: scale(0);
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
-  to {
-    transform: scale(1);
+  100% {
+    opacity: 100;
+  }
+}
+/*PRICE SLIDING ANIMATION*/
+.menu__text:hover .menu__price {
+  animation: slidePrice ease-in-out 400ms;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  width: 30px;
+}
+
+@keyframes slidePrice {
+  0% {
+    transform: translate(30px, 0);
+  }
+  100% {
+    transform: translate(-30px, 0);
+  }
+}
+/*CHECKBOX SHOWING*/
+.menu__text:hover .menu__checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  background-color: #99e2d0;
+  height: 100%;
+  overflow: hidden;
+  animation: checkboxIn ease-in-out 400ms;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  transform-origin: 50% 50%;
+}
+
+@keyframes checkboxIn {
+  0% {
+    transform: translate(40px, 0);
+  }
+  100% {
+    transform: translate(0px, 0);
+  }
+}
+.menu__text:hover .menu__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 180px;
+}
+
+/*SPIN CHECK ANIMATION*/
+.menu__text:hover .menu__checkbox .fas {
+  animation: spinCheck ease-in-out 700ms;
+}
+
+@keyframes spinCheck {
+  0% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
