@@ -471,7 +471,7 @@ body a {
 /*LOADER*/
 #loader-contain {
   width: 100%;
-  height: 1000px;
+  height: 100%;
   background-color: white;
   position: absolute;
   z-index: 999;
@@ -509,6 +509,7 @@ body a {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 @keyframes spin {
