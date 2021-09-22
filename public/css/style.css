@@ -77,13 +77,13 @@ body a {
   padding: 40px 0px 40px 0px;
 }
 .slogan__title {
-  width: 50%;
+  width: 80%;
   font-size: 1.8rem;
   text-align: center;
   font-weight: bolder;
 }
 .slogan__subtitle {
-  width: 50%;
+  width: 90%;
   font-size: 1rem;
   text-align: center;
   font-weight: lighter;
