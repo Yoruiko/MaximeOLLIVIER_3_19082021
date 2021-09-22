@@ -113,16 +113,14 @@ body a {
   justify-content: flex-start;
   width: 100%;
 }
+.heading--style h2 {
+  font-size: 1.6rem;
+}
 @media (min-width: 561px) {
   .heading--style {
     display: flex;
     justify-content: center;
-    align-items: center;
   }
-}
-.heading--style h2 {
-  font-size: 1.6rem;
-  padding-left: 15px;
 }
 
 .fonction {
@@ -138,7 +136,7 @@ body a {
   padding: 20px 50px 20px 0px;
   border-radius: 15px;
   margin-top: 20px;
-  width: 260px;
+  width: 273px;
 }
 .fonction .fas {
   /*the icon next to the text*/
@@ -159,10 +157,6 @@ body a {
   font-weight: bold;
 }
 
-.fonction--style:hover {
-  background-color: #f4ecfb;
-}
-
 .fonction1, .fonction2, .fonction3 {
   display: flex;
   justify-content: center;
@@ -181,6 +175,9 @@ body a {
   left: -40px;
 }
 
+.fonction3 {
+  background-color: #dac2f2;
+}
 .fonction3 .fas {
   position: relative;
   left: -5px;
@@ -196,7 +193,8 @@ body a {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
+  padding: 30px 0 30px 0;
+  background-color: #fafafa;
 }
 
 .article--style {
@@ -211,7 +209,7 @@ body a {
 
 .card__img {
   object-fit: cover;
-  width: 290px;
+  width: 330px;
   height: 180px;
   border-radius: 15px 15px 0px 0px;
 }
@@ -235,6 +233,9 @@ body a {
   }
 }
 
+.card-wrapper {
+  width: 330px;
+}
 @media (min-width: 930px) {
   .card-wrapper {
     display: flex;
@@ -242,7 +243,7 @@ body a {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    width: 650px;
+    width: 700px;
   }
 }
 
@@ -277,13 +278,13 @@ body a {
 .info__like .liked--true {
   position: absolute;
   opacity: 0;
-  right: 5px;
+  right: 20px;
   color: #9b59dc;
   transition: opacity 400ms;
 }
 .info__like .liked--false {
   position: absolute;
-  right: 5px;
+  right: 20px;
 }
 .info__like:hover .liked--true {
   opacity: 1;
@@ -291,7 +292,7 @@ body a {
 
 .footer {
   width: 100%;
-  background-color: #737373;
+  background-color: #262626;
   padding-bottom: 40px;
 }
 .footer__heading {
@@ -443,7 +444,7 @@ body a {
   display: flex;
   height: 100%;
   align-items: flex-end;
-  padding: 0px 15px 0px 25px;
+  padding: 0px 15px 20px 25px;
 }
 .menu__checkbox {
   display: none;
@@ -554,7 +555,7 @@ body a {
     transform: translate(30px, 0);
   }
   100% {
-    transform: translate(-30px, 0);
+    transform: translate(-5px, 0);
   }
 }
 @media (min-width: 561px) {
@@ -563,7 +564,7 @@ body a {
       transform: translate(50px, 0);
     }
     100% {
-      transform: translate(-10px, 0);
+      transform: translate(15px, 0);
     }
   }
 }
